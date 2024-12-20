@@ -1,0 +1,59 @@
+/* Please define your custom styles here */
+.tategaki {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  height: 160px;
+}
+/* 画面周辺の余白とボーダーラインを削除 */
+:root {
+  --padding-internal: 0px;
+}
+.container.fullscreen{
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  padding: 10px;
+}
+/* HTML PAGEの要素の幅を大きくする */
+:root {
+  --width-min-container: 440px;
+}
+.w-m{
+  width: auto;
+}
+/* フォントを調整 */
+:root {
+  --font-size: 16px;
+  --line-height: 1.6;
+}
+h1, h2, h3{
+  margin: 1.5em 0 0.3em 0;
+}
+p{
+  margin: 0 0 0.6em 0;
+}
+/* Multiple choiceやCheck all that applyの見た目を調整 */
+.page-item-table{
+  margin-top: 10px;
+}
+table td{
+  padding: 5px 5px 0px 5px;
+}
+table td:first-child{
+  text-align:center;
+}
+@media all and (max-width: 520px){
+  :root {
+  --width-min-container: auto;
+  --font-size: 15px;
+  }
+}
+.page-item-divider{
+  margin: 1.5em 0;
+}
+@media all and (max-width: 520px){
+  :root {
+  --width-min-container: auto;
+  --font-size: 15px;
+  }
+}
