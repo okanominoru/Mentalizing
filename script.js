@@ -51,11 +51,17 @@ const study = lab.util.fromObject({
           ],
           "name": "consent",
           "help": "参加に同意いただける方は，以下の「同意する」にチェックを入れ画面下部の「次へ」を押してください。"
+        },
+        {
+          "required": true,
+          "type": "html",
+          "content": "\u003Cdiv style=\"margin: 20px 0 100px 0;\"\u003E\u003Cbutton\u003E次へ進む\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E",
+          "name": ""
         }
       ],
       "scrollTop": true,
       "submitButtonText": "次へ →",
-      "submitButtonPosition": "right",
+      "submitButtonPosition": "hidden",
       "files": {},
       "responses": {
         "": ""
@@ -115,11 +121,17 @@ const study = lab.util.fromObject({
             }
           ],
           "name": "sex"
+        },
+        {
+          "required": true,
+          "type": "html",
+          "content": "\u003Cdiv style=\"margin: 20px 0 100px 0;\"\u003E\u003Cbutton\u003E次へ進む\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E",
+          "name": ""
         }
       ],
       "scrollTop": true,
       "submitButtonText": "次へ →",
-      "submitButtonPosition": "right",
+      "submitButtonPosition": "hidden",
       "files": {},
       "responses": {
         "": ""
@@ -255,11 +267,17 @@ const study = lab.util.fromObject({
           "label": "差し支えなければ，具体的な活動を以下に記述してください。",
           "name": "volun_text",
           "help": "例）放課後等デイサービスで小・中学生を対象に学習指導を行なったり，一緒に遊んでいる。"
+        },
+        {
+          "required": true,
+          "type": "html",
+          "content": "\u003Cdiv style=\"margin: 20px 0 100px 0;\"\u003E\u003Cbutton\u003E次へ進む\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E",
+          "name": ""
         }
       ],
       "scrollTop": true,
       "submitButtonText": "次へ →",
-      "submitButtonPosition": "right",
+      "submitButtonPosition": "hidden",
       "files": {},
       "responses": {
         "": ""
@@ -387,11 +405,17 @@ const study = lab.util.fromObject({
           },
           "name": "job_year",
           "help": "（例）2010年から2020年までは前職（支援職），2021年から2024年は今の職業（支援職）に就いている場合は「13」とお答えください。\n支援職では無い期間は勤続年数として含めないようお願いいたします。"
+        },
+        {
+          "required": true,
+          "type": "html",
+          "content": "\u003Cdiv style=\"margin: 20px 0 100px 0;\"\u003E\u003Cbutton\u003E次へ進む\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E",
+          "name": ""
         }
       ],
       "scrollTop": true,
       "submitButtonText": "次へ →",
-      "submitButtonPosition": "right",
+      "submitButtonPosition": "hidden",
       "files": {},
       "responses": {
         "": ""
@@ -548,11 +572,17 @@ const study = lab.util.fromObject({
               ],
               "label": "各質問項目をよく読み，それぞれの文について最も当てはまる番号にチェックを入れてください。質問項目は全部で28項目です。",
               "name": "MentS-J"
+            },
+            {
+              "required": true,
+              "type": "html",
+              "content": "\u003Cdiv style=\"margin: 20px 0 100px 0;\"\u003E\u003Cbutton\u003E次へ進む\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E",
+              "name": ""
             }
           ],
           "scrollTop": true,
           "submitButtonText": "次へ→",
-          "submitButtonPosition": "right",
+          "submitButtonPosition": "hidden",
           "files": {},
           "responses": {
             "": ""
@@ -604,11 +634,17 @@ const study = lab.util.fromObject({
               ],
               "label": "各質問項目をよく読み，それぞれの文について最も当てはまる番号にチェックを入れてください。質問項目は全部で５項目です。",
               "name": "MES"
+            },
+            {
+              "required": true,
+              "type": "html",
+              "content": "\u003Cdiv style=\"margin: 20px 0 100px 0;\"\u003E\u003Cbutton\u003E次へ進む\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E",
+              "name": ""
             }
           ],
           "scrollTop": true,
           "submitButtonText": "次へ →",
-          "submitButtonPosition": "right",
+          "submitButtonPosition": "hidden",
           "files": {},
           "responses": {
             "": ""
@@ -637,11 +673,17 @@ const study = lab.util.fromObject({
           "type": "input",
           "label": "アンケートや研究について，ご質問・ご不明な点がございましたら以下の空欄にご記入ください。",
           "name": "free"
+        },
+        {
+          "required": true,
+          "type": "html",
+          "content": "\u003Cdiv style=\"margin: 20px 0 100px 0;\"\u003E\u003Cbutton\u003E次へ進む\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E",
+          "name": ""
         }
       ],
       "scrollTop": true,
       "submitButtonText": "次へ→",
-      "submitButtonPosition": "right",
+      "submitButtonPosition": "hidden",
       "files": {},
       "responses": {
         "": ""
@@ -656,11 +698,17 @@ const study = lab.util.fromObject({
         {
           "type": "text",
           "title": "画面下部の送信するボタンを押していただいた後，画面を閉じていただいて構いません。"
+        },
+        {
+          "required": true,
+          "type": "html",
+          "content": "\u003Cdiv style=\"margin: 20px 0 100px 0;\"\u003E\u003Cbutton\u003E送信する\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E",
+          "name": ""
         }
       ],
       "scrollTop": true,
       "submitButtonText": "送信する→",
-      "submitButtonPosition": "right",
+      "submitButtonPosition": "hidden",
       "files": {},
       "responses": {
         "": ""
