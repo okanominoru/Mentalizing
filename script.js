@@ -737,6 +737,8 @@ fetch("https://pipe.jspsych.org/api/data/", {
     data: data,
   }),
 });
+experiment.options.download = false;
+lab.run(experiment);
 }
       },
       "title": "Page",
