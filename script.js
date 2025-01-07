@@ -99,6 +99,20 @@ const study = lab.util.fromObject({
           "type": "divider"
         },
         {
+          "required": true,
+          "type": "input",
+          "label": "あなたの年齢を教えてください。",
+          "attributes": {
+            "type": "number"
+          },
+          "help": "（例）あなたの年齢が23歳ならば「23」と半角数字で記入してください。",
+          "name": "age"
+        },
+        {
+          "required": true,
+          "type": "divider"
+        },
+        {
           "required": false,
           "type": "radio",
           "label": "あなたの性別を教えてください。",
@@ -689,31 +703,6 @@ const study = lab.util.fromObject({
         "": ""
       },
       "parameters": {},
-      "messageHandlers": {},
-      "title": "謝辞"
-    },
-    {
-      "type": "lab.html.Page",
-      "items": [
-        {
-          "type": "text",
-          "title": "画面下部の送信するボタンを押していただいた後，画面を閉じていただいて構いません。"
-        },
-        {
-          "required": true,
-          "type": "html",
-          "content": "\u003Cdiv style=\"margin: 20px 0 100px 0;\"\u003E\u003Cbutton\u003E送信する\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E",
-          "name": ""
-        }
-      ],
-      "scrollTop": true,
-      "submitButtonText": "送信する→",
-      "submitButtonPosition": "hidden",
-      "files": {},
-      "responses": {
-        "": ""
-      },
-      "parameters": {},
       "messageHandlers": {
         "before:prepare": function anonymous(
 ) {
@@ -737,12 +726,41 @@ fetch("https://pipe.jspsych.org/api/data/", {
     data: data,
   }),
 });
+}
+      },
+      "title": "謝辞",
+      "tardy": true
+    },
+    {
+      "type": "lab.html.Page",
+      "items": [
+        {
+          "type": "text",
+          "title": "ご協力ありがとうございました。このままウィンドウを閉じて終了して下さい。"
+        },
+        {
+          "required": true,
+          "type": "html",
+          "content": "",
+          "name": ""
+        }
+      ],
+      "scrollTop": true,
+      "submitButtonText": "送信する→",
+      "submitButtonPosition": "hidden",
+      "files": {},
+      "responses": {
+        "": ""
+      },
+      "parameters": {},
+      "messageHandlers": {
+        "run": function anonymous(
+) {
 experiment.options.download = false;
 lab.run(experiment);
 }
       },
-      "title": "Page",
-      "tardy": true
+      "title": "Page"
     }
   ]
 })
